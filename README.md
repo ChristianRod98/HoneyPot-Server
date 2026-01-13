@@ -49,6 +49,7 @@ Build and deploy vulnerable cloud server using DigitalOcean
 ## Loginto web guey
 - with the sever on and after ssh into server
 - open web guey on your webrowser using the public IP and port number.
-- "https://(public IP):64295
+- "https://(public IP):64297
 <img width="1613" height="1238" alt="Screenshot 2026-01-11 155931" src="https://github.com/user-attachments/assets/1f42129b-f7d7-4408-bff8-97d4576c409a" />/>
+<img width="1683" height="1095" alt="Screenshot 2026-01-12 213403" src="https://github.com/user-attachments/assets/16a1033b-f92f-48c3-a0d5-9b8a233c8852" />
 

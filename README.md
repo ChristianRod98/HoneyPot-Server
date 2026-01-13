@@ -1,15 +1,21 @@
 # HoneyPot-Server
-
+## Overview
 This project involves deploying and managing a cloud-based honeypot using T-Pot on DigitalOcean to observe real-world malicious activity targeting internet-facing services. Windows PowerShell was used for secure remote access and basic automation, while honeypot logs and attack map data were monitored to identify common attacker behaviors such as brute-force login attempts, network scanning, and exploitation attempts against services like Telnet and SSH. Analyzing attack metadata, including source IPs, protocols, and ports, provided hands-on experience with threat detection, log analysis, and SOC-style alert triage, while reinforcing the importance of continuous monitoring and proper service hardening.
-
-## What is a honeypot?
-A deliberately vulnerable system set up to attract, detect, and study malicious activity, without putting real systems at risk.
 
 ## What I learned
 This project helped me understand how quickly internet-facing services can be discovered and targeted by automated attacks. By reviewing attack data such as source IPs, protocols, and port numbers, I observed frequent attempts against common services like Telnet and SSH, often involving repeated login attempts that suggest automated or bot-driven activity. Using T-Pot provided hands-on experience with centralized monitoring and visualizing attack patterns, and reinforced the importance of continuous monitoring and properly securing exposed services.
 
-## Getting started
-Build and deploy vulnerable cloud server using DigitalOcean
+Technical skills
+- Honeypot deployment and monitoring (T-Pot)
+- Cloud infrastructure and security fundamentals (DigitalOcean)
+- Log analysis and event correlation
+- Threat detection and basic incident triage
+
+## Getting Started 
+### What is a honeypot?
+A deliberately vulnerable system set up to attract, detect, and study malicious activity, without putting real systems at risk.
+
+### Build and deploy vulnerable cloud server using DigitalOcean
 - Click Create dropdown tab
 - Seclect Droplet (create cloud servers
 
@@ -25,7 +31,7 @@ Build and deploy vulnerable cloud server using DigitalOcean
 <img width="1196" height="564" alt="Screenshot 2026-01-12 113825" src="https://github.com/user-attachments/assets/d8acd04a-b981-46db-9ed2-af479f099b32" />
 <img width="1272" height="825" alt="Screenshot 2026-01-12 113911" src="https://github.com/user-attachments/assets/1fdd8420-60a7-4d0d-9be0-3711c1e71cca" />
 
-## ssh into server using Windows powershell
+### ssh into server using Windows powershell
 - Use ssh commans to root into created server using the public IP
 - Once in the server, use "apt-get update && apt-get upgrade -y" to update any toold and repositories needed
 <img width="569" height="145" alt="Screenshot 2026-01-12 114351" src="https://github.com/user-attachments/assets/3a3b7672-9e07-4863-a95b-f20fc922d6b7" />
@@ -36,7 +42,7 @@ Build and deploy vulnerable cloud server using DigitalOcean
 - switch to the user account. "su (user account)"
 - switch to home account. "cs /home/(user account)"
 
-## Clone T-pot gitHub repository
+### Clone T-pot gitHub repository
 - clone the repository into user account. "git clone https://github.com/telekom-security/tpotce"
 - change directory. "cd tpotce/"
 - run install.sh. "./install.sh"
@@ -48,7 +54,7 @@ Build and deploy vulnerable cloud server using DigitalOcean
 <img width="1447" height="734" alt="Screenshot 2026-01-11 154848" src="https://github.com/user-attachments/assets/cf825068-f16b-4cbb-83f7-3477066de52d" />
 <img width="1449" height="668" alt="Screenshot 2026-01-11 154914" src="https://github.com/user-attachments/assets/b3853a8e-7700-4583-87c6-c62dd920d27c" />
 
-## Loginto web guey
+### Login to webGUI
 - with the sever on and after ssh into server
 - open web guey on your webrowser using the public IP and port number.
 - "https://(public IP):64297

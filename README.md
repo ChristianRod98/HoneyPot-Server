@@ -1,10 +1,12 @@
 # HoneyPot-Server
 
-Deployed and managed a cloud-based honeypot using T-Pot on DigitalOcean to capture and analyze real world malicious activity. Utilized Windows PowerShell for secure remote management and automation, monitored attacker behavior through generated logs, and analyzed brute-force attempts, scanning activity, and exploitation techniques. Collected and reviewed attack data to support threat detection, log analysis, and SOC-style alert triage.
+This project involves deploying and managing a cloud-based honeypot using T-Pot on DigitalOcean to observe real-world malicious activity targeting internet-facing services. Windows PowerShell was used for secure remote access and basic automation, while honeypot logs and attack map data were monitored to identify common attacker behaviors such as brute-force login attempts, network scanning, and exploitation attempts against services like Telnet and SSH. Analyzing attack metadata, including source IPs, protocols, and ports, provided hands-on experience with threat detection, log analysis, and SOC-style alert triage, while reinforcing the importance of continuous monitoring and proper service hardening.
 
-
-## what is a honeypot?
+## What is a honeypot?
 A deliberately vulnerable system set up to attract, detect, and study malicious activity, without putting real systems at risk.
+
+## What I learned
+This project helped me understand how quickly internet-facing services can be discovered and targeted by automated attacks. By reviewing attack data such as source IPs, protocols, and port numbers, I observed frequent attempts against common services like Telnet and SSH, often involving repeated login attempts that suggest automated or bot-driven activity. Using T-Pot provided hands-on experience with centralized monitoring and visualizing attack patterns, and reinforced the importance of continuous monitoring and properly securing exposed services.
 
 ## Getting started
 Build and deploy vulnerable cloud server using DigitalOcean
@@ -50,6 +52,6 @@ Build and deploy vulnerable cloud server using DigitalOcean
 - with the sever on and after ssh into server
 - open web guey on your webrowser using the public IP and port number.
 - "https://(public IP):64297
-<img width="1613" height="1238" alt="Screenshot 2026-01-11 155931" src="https://github.com/user-attachments/assets/1f42129b-f7d7-4408-bff8-97d4576c409a" />/>
+<img width="1613" height="1238" alt="Screenshot 2026-01-11 155931" src="https://github.com/user-attachments/assets/1f42129b-f7d7-4408-bff8-97d4576c409a" />
 <img width="1683" height="1095" alt="Screenshot 2026-01-12 213403" src="https://github.com/user-attachments/assets/16a1033b-f92f-48c3-a0d5-9b8a233c8852" />
 
